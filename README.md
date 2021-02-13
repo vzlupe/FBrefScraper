@@ -7,3 +7,5 @@ Based on: https://smehta.medium.com/scrape-and-create-your-own-beautiful-dataset
 Run FBrefMaster.py to collect from all 5 leagues or create your own file to run a particular league. Be sure you have the appropriate CSV destination folders in the same directory as FBrefMaster.py. Each league takes ~30min. to run.
 
 Code currently does not run 'Big 5' (see FBrefScrape/FBrefBig5.py) but feel free to get it running. I haven't had the time to work out some issues specific to that dataset.
+
+Whereas FBrefScrape/FBrefInd.py does the work for player stats you should pretty easily be able to add functionality with a file like FBrefScrape/FBrefTeam.py for team stats.
