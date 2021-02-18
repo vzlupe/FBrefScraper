@@ -7,7 +7,7 @@ import FBrefScrape.FBrefLigue1
 
 def main():
 	league = int(input("Choose league (0=Prem, 1=Bundes, 2=LaLiga, 3=SerieA, 4=Ligue1, 5=All): "))
-	#FBrefScrape.FBrefBig5.work()
+
 	if league == 0:
 		FBrefScrape.FBrefPrem.work()
 	elif league == 1:
