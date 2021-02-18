@@ -6,12 +6,24 @@ import FBrefScrape.FBrefSerieA
 import FBrefScrape.FBrefLigue1
 
 def main():
+	league = int(input("Choose league (0=Prem, 1=Bundes, 2=LaLiga, 3=SerieA, 4=Ligue1, 5=All): "))
 	#FBrefScrape.FBrefBig5.work()
-	FBrefScrape.FBrefLaLiga.work()
-	FBrefScrape.FBrefBundes.work()
-	FBrefScrape.FBrefPrem.work()
-	FBrefScrape.FBrefSerieA.work()
-	FBrefScrape.FBrefLigue1.work()
+	if league == 0:
+		FBrefScrape.FBrefPrem.work()
+	elif league == 1:
+		FBrefScrape.FBrefBundes.work()
+	elif league == 2:
+		FBrefScrape.FBrefLaLiga.work()
+	elif league == 3:
+		FBrefScrape.FBrefSerieA.work()
+	elif league == 4:
+		FBrefScrape.FBrefLigue1.work()
+	elif league == 5:
+		FBrefScrape.FBrefPrem.work()
+		FBrefScrape.FBrefBundes.work()
+		FBrefScrape.FBrefLaLiga.work()
+		FBrefScrape.FBrefSerieA.work()
+		FBrefScrape.FBrefLigue1.work()
 
 if __name__ == '__main__':
 	main()
